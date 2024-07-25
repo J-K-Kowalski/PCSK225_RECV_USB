@@ -6973,7 +6973,7 @@
 		(descr "Through hole straight pin header, 1x02, 2.54mm pitch, single row")
 		(tags "Through hole pin header THT 1x02 2.54mm single row")
 		(property "Reference" "J9"
-			(at 0 -2.33 360)
+			(at 0 -2.33 0)
 			(layer "F.SilkS")
 			(uuid "021c9fa9-77be-4809-af41-b45ba08af95d")
 			(effects
@@ -6984,7 +6984,7 @@
 			)
 		)
 		(property "Value" "ANT0"
-			(at 0 4.87 360)
+			(at 0 4.87 0)
 			(layer "F.Fab")
 			(uuid "3bf71829-04b3-4fce-9a9d-c366b4c4fabe")
 			(effects
@@ -19942,7 +19942,7 @@
 		(descr "SMD Solder 3-pad Jumper, 1x1.5mm rounded Pads, 0.3mm gap, open")
 		(tags "solder jumper open")
 		(property "Reference" "JP2"
-			(at -1.9512 1.9304 360)
+			(at -1.9512 1.9304 0)
 			(layer "F.SilkS")
 			(uuid "0f8a90b6-58db-4193-9649-e99d275ea471")
 			(effects
@@ -19953,7 +19953,7 @@
 			)
 		)
 		(property "Value" "SolderJumper_3_Open"
-			(at 0 1.9 360)
+			(at 0 1.9 0)
 			(layer "F.Fab")
 			(uuid "e70c7a33-32b5-4b13-a9ef-a2294e403784")
 			(effects
@@ -26746,7 +26746,7 @@
 		(descr "SOT-23 (TO-236) CASE 318-08 ISSUE AS")
 		(tags "JFET (N-Channel)")
 		(property "Reference" "Q6"
-			(at 0.3048 2.6416 360)
+			(at 0.3048 2.6416 0)
 			(layer "F.SilkS")
 			(uuid "53a2dc7a-c59d-4080-954a-451f5251b487")
 			(effects
@@ -26757,7 +26757,7 @@
 			)
 		)
 		(property "Value" "MMBFU310LT1G"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "e5ed2afa-751d-4425-8f23-e25b17010301")
@@ -26769,7 +26769,7 @@
 			)
 		)
 		(property "Footprint" "Samacsys:SOT96P237X111-3N"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "9077ea28-f4f8-483b-8cc7-24a25d1d4247")
@@ -26781,7 +26781,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.onsemi.com/pdf/datasheet/mmbfu310lt1-d.pdf"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "a4314aa0-f397-4580-bd39-5d4b099886e9")
@@ -26793,7 +26793,7 @@
 			)
 		)
 		(property "Description" "ONSEMI - MMBFU310LT1G - JFET Transistor, JFET, 25 V, 24 mA, 60 mA, 6 V, SOT-23, JFET"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "870479d4-66a2-4c16-a85d-7ab0be100080")
@@ -27014,7 +27014,7 @@
 			(uuid "1bc3893c-23f6-4882-ac73-851f87198777")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(uuid "17708b09-bd47-41a6-8462-b3b3a88dbb26")
 			(effects
@@ -29412,7 +29412,7 @@
 		)
 	)
 	(gr_text "PPS"
-		(at 142.4644 129.722 90)
+		(at 146.249 129.708695 90)
 		(layer "F.SilkS")
 		(uuid "0ad616b3-6fba-43a0-aa2c-c55337adfd44")
 		(effects
@@ -29425,7 +29425,7 @@
 		)
 	)
 	(gr_text "TEST"
-		(at 157.7806 128.5282 0)
+		(at 155.1898 128.4266 0)
 		(layer "F.SilkS")
 		(uuid "14fc9ccc-c917-4553-b9db-f663e3329827")
 		(effects
@@ -30100,7 +30100,7 @@
 		)
 	)
 	(gr_text "FRM"
-		(at 153.869 129.6458 90)
+		(at 142.439 129.7474 90)
 		(layer "F.SilkS")
 		(uuid "a4c8147a-6d09-4822-a417-1f6823a80a88")
 		(effects
@@ -30165,7 +30165,7 @@
 		)
 	)
 	(gr_text "RTC"
-		(at 146.2744 129.6204 90)
+		(at 149.9828 129.553876 90)
 		(layer "F.SilkS")
 		(uuid "ba0229c1-e569-4926-8dd4-e974bf18bbc9")
 		(effects
@@ -30295,7 +30295,7 @@
 		)
 	)
 	(gr_text "DCD"
-		(at 150.0844 129.6966 90)
+		(at 153.869 129.7474 90)
 		(layer "F.SilkS")
 		(uuid "fc47756a-c566-49a2-b227-4831fab65dae")
 		(effects
