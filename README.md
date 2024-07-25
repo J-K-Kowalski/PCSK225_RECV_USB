@@ -38,7 +38,11 @@
 
 ### Sygnały wyjściowe
 
-<p>Na wyjściu NMEA powinny byc dane jak pokazano poniżej. Po uzyskaniu synchronizacji pojawia się co 1min. ramka $PGGUM, pierwsze 9 bajtów to kojejne bajty zakodowanej ramki czasu, ostatni to czas od ostatnio odebranej poprawnej ramki.
+<p>Na wyjściu NMEA powinny byc dane jak pokazano poniżej. Po uzyskaniu synchronizacji pojawia się co 1min. ramka $PGGUM, pierwsze 9 bajtów to kojejne bajty zakodowanej ramki czasu, ostatni to czas od ostatnio odebranej poprawnej ramki. Do synchronizacji czasu zastosowano ramkę RMC (Recommended Minimum Specific GNSS Data). Odbiornik nie zna swojego położenia geograficznego, dlatego dla zachowania kompatybilności z odbiornikami GNSS w ramce przesyłane są statyczne współrzędne <a  target=_blank>href="https://www.google.pl/maps/place/52%C2%B014'30.6%22N+21%C2%B000'03.0%22E/@52.24183,20.9982597,17z/data=!3m1!4b1!4m4!3m3!8m2!3d52.24183!4d21.00084?entry=ttu">Laboratorium Czasu i Częstotliwości Głównego Urzędu Miar w Warszawie (52.24183N, 21.00084E)</a>.
+
+<p>Dokładny opis zawarty jest w <a href="https://github.com/e-CzasPL/TimeReceiver225kHz/blob/main/doc/e-CzasPL-Opis-projektu-przykladowego-modulu-odbiorczego-e-Czas-Radio.pdf">dokumentacji</a>  na stronie 8.
+
+
 <p>
 
 <img src="img/NMEA.png" width=500>
@@ -49,10 +53,10 @@
 
 ## Sygnały
 <ul>
-<li>LED1 - DCD Blue 
-<li>LED2 - RTC Green 
-<li>LED3 - PPS Yellow
-<li>LED4 - FRM Orange
+<li>LED1 - DCD Blue - sygnalizacja rozpoznania początku ramki danych (po wykryciu słowa kluczowego) – pozostaje zapalona do końca transmisji ramki,
+<li>LED2 - RTC Green - Informuje o odebraniu poprawnego czasu i wpisaniu go do RTC, w przypadku braku możliwości aktualizacji RTC z transmisji radiowej dioda jest gaszona po 24 godzinach,
+<li>LED3 - PPS Yellow - 1PPS Sygnał 1PPS zsynchronizowany z odebranym sygnałem czasu,
+<li>LED4 - FRM Orange - zapalana po poprawnym odebraniu ramki danych, przeliczeniu kodów korekcyjnych oraz potwierdzeniu poprawności danych. Narastające zbocze informuje o początku sekundy (przesłanej w ramce danych).
 </ul>
 
-
+	
