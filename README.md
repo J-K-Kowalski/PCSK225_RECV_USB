@@ -39,11 +39,12 @@
 ### Sygnały wyjściowe
 
 <p>Na wyjściu NMEA powinny byc dane jak pokazano poniżej. Po uzyskaniu synchronizacji pojawia się co 1min. ramka $PGGUM, pierwsze 9 bajtów to kojejne bajty zakodowanej ramki czasu, ostatni to czas od ostatnio odebranej poprawnej ramki.
+<p>
 
 <img src="img/NMEA.png" width=500>
 
 <p> Na wyjściu TEST układ wysyła dane diagnostyczne. STS: MAX/MIN - maksymalny i minimalny poziom z ADC (12 bitów) - może być pomocny przy optymalizacji poziomu audio 1 kHz na wejście procesora. IIR - to "offset" - przesunięcie prążka 1kHz - od częstotliwości nominalnej, pokazuje "odstrojenie" frontendu - sterowanego tym małym kwarcem zegarkowym.  Umożliwia to nadążenie filtrem DSP za sygnałem użytecznym. 
-
+<p>
 <img src="img/test.png" width=500>
 
 ## Sygnały
