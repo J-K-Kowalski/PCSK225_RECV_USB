@@ -16,5 +16,23 @@
 <li>Interfejsem radiowym na układzie Si4735 ze wzmacniaczem antenowym na tranzystorze FET
 </ol>
 
+** UWAGA - Firmawre pochodzi z projektu eCzasPL, nie posiadam kodów źródłowych **
+
+
+### Interfejs USB
+
+<p>Interfejs USB zbudowałem na układzie FT230XS, jednym z najprostszych układów typu serial/USB. Zastosowałem typowe złacze USB-C 2.0 do przesyłania danych i zasilania napięciem 5V.
+<p>Do zabezpieczenia układu przed odwrotną polaryzacją (a takie rzeczy się zdarzają przy eksperymentach) zastosowałem tranzystor Q2. Rezystory R2, R3 informują komputer hosta że wymagane jest napięcie 5V. stan transmisji pokazują diody LED7 i LED8.
+<p> Układ U3 jest prostym LDO o napięciu wyjściowym 3.3V. Cały układ pobiera ok 100mA, ten stabilizator z dużym  nadmiarem zapewnia takie natężenie prądu. Złącze zewnętrznego zasilania 3.3V (gdy nie jest zamontowany USB i LDO) jest zabezpieczone tranzystorem Q4. Wejście dodatkowe zasilania 5V zabezpieczone jest tylko dioną D1.
+
+### Procesor DSPic33FJ128
+
+<p>W układzie zstosowalem wskazany w projekcje eCzasPL procesor DSPIC33FJ128MC804-PT w łatwej (stosunkowo) do montażu ręcznego obudowie. Standardowo dołączyłem kondensatory blokujące 100nF na odpowiednich pinach, resystory podciągające I2C, generator kwarcowy na typowym kwarcu 10MHz. Zestaw ledów LED1 - LED4 sygnalizuje status odbiornika. Układ ma dwa interfejsy szeregowe: NMEA i TEST. 
+<p>Interfejs NMEA na pinie (1) złącza wysyła ramkę NMEA $GPRMC - co pozwoliło na stosowania do dekodowania czasu standardowych bibliotek dostępnych dla mikrokontrolerów i komputerów. Drugie wyjście TEST na pinie (3) wysyła informacje o stanie układu w postaci tekstowej. Obydwa interfejsy pracują w szybkości 115200 bodów.
+<p>Opcjonalnie można zamontować precyzyjny generator TCXO który generuje częstotliwość 10MHZ i może zasilać zegar procesora. Znacznie zwiększa to dokładność pracy. W celu uzyskania sygnału 1PPS zastosowano układ PIC12F675 (w dwóch wersjach obudowy, oczywiście nalezy zamontować tylko jeden z nich).
+<p> UWAGA - mikrosteping i synchronizacja PICDIV nie jest jeszcze zaimplementowana w firmware eCzasPL Radio.
+
+### Odbiornik HF
+
 
 
