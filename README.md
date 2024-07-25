@@ -34,5 +34,22 @@
 
 ### Odbiornik HF
 
+<p>Antena ferrytowa np. z https://telzam.pl/anteny-dcf/ (wykonują także anteny na 225kHz) podłączona jest przez złącze ANT0 do tranzystora FET który pełni rolę wzmacniacza. Jest on opcjonalny i można zewrzeć odpowiednie pola JP2 aby sygnał docierał bezpośrednio do wejścia układu Si4735. Układ ten jest połaczony z kwarcem zegarkowym 32kHz, co przy użyciu patcha SSB pozwala na uzyskanie zmieszanej częstotliwości wstęgi bocznej (górnej USB) o częstotliwości 1kHz. Ten sygnał uzyskiwany z wyjścia LOUT jest wzmacniany w jednostopniowym wzmaczniaczu U$1A i sygnał zasila przetwornik ADC w procesorze. Drugi wzmacniacz układu U$1B nie jest używany.
 
+### Sygnały wyjściowe
+
+<p>Na wyjściu NMEA powinny byc dane jak pokazano poniżej. Po uzyskaniu synchronizacji pojawia się co 1min. ramka $PGGUM, pierwsze 9 bajtów to kojejne bajty zakodowanej ramki czasu, ostatni to czas od ostatnio odebranej poprawnej ramki.
+
+<img src="img/NMEA.png" width=500>
+
+<p> Na wyjściu TEST układ wysyła dane diagnostyczne. STS: MAX/MIN - maksymalny i minimalny poziom z ADC (12 bitów) - może być pomocny przy optymalizacji poziomu audio 1 kHz na wejście procesora. IIR - to "offset" - przesunięcie prążka 1kHz - od częstotliwości nominalnej, pokazuje "odstrojenie" frontendu - sterowanego tym małym kwarcem zegarkowym.  Umożliwia to nadążenie filtrem DSP za sygnałem użytecznym. 
+
+<img src="img/test.png" width=500>
+
+## Sygnały
+
+LED1 - DCD Blue 
+LED2 - RTC Green 
+LED3 - PPS Yellow
+LED4 - FRM Orange
 
