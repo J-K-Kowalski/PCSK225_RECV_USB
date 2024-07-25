@@ -48,9 +48,9 @@
 <img src="img/test.png" width=500>
 
 ## Sygnały
-
-LED1 - DCD Blue 
-LED2 - RTC Green 
-LED3 - PPS Yellow
-LED4 - FRM Orange
-
+<ul>
+<li>LED1 - DCD Blue 
+<li>LED2 - RTC Green 
+<li>LED3 - PPS Yellow
+<li>LED4 - FRM Orange
+</ul>
