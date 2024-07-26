@@ -14,7 +14,7 @@
 <li>USB interface on FT230X + LDO 3.3V
 <li>DSPic33FJ128 processor with optional TCXO generator and PicDIV divider
 <li>Radio interface on Si4735 chip with antenna amplifier on FET transistor
-</ol>
+</ol> 
 
 <b>NOTE</b> - The firmware comes from the eCzasPL project. I don't have the source codes.
 
